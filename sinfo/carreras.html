@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Carreras - Guía Universitaria</title>
+    <link rel="stylesheet" href="carreras.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+
+    <div class="logo">
+        Guía Universitaria 🎓
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="boton-menu">
+        ☰
+    </label>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="universidades.html">Universidades</a>
+        <a >Carreras</a>
+        <a href="test.html">Test vocacional</a>
+    </nav>
+
+</header>
+
+<section class="hero-carreras">
+
+    <div class="contenido-hero">
+
+        <span class="etiqueta">EXPLORA TU FUTURO</span>
+
+        <h1>Encuentra tu carrera</h1>
+
+        <p>
+            Explora diferentes opciones profesionales, conoce las universidades
+            donde puedes estudiarlas y encuentra una carrera relacionada con
+            tus intereses.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="seccion-explorar">
+
+    <div class="titulo-seccion">
+
+        <span>EXPLORADOR DE CARRERAS</span>
+
+        <h2>¿Qué quieres estudiar?</h2>
+
+        <p>
+            Busca una carrera o utiliza los filtros para encontrar diferentes
+            opciones de formación profesional.
+        </p>
+
+    </div>
+
+    <div class="filtros">
+
+        <div class="buscador">
+
+            <label for="buscador-carreras">
+                Buscar carrera
+            </label>
+
+            <input
+                type="text"
+                id="buscador-carreras"
+                placeholder="Ejemplo: Medicina"
+            >
+
+        </div>
+
+        <div class="filtro">
+
+            <label for="filtro-universidad">
+                Universidad
+            </label>
+
+            <select id="filtro-universidad">
+
+                <option value="todas">Todas las universidades</option>
+                <option value="upea">UPEA</option>
+                <option value="unifranz">UNIFRANZ</option>
+                <option value="unitepc">UNITEPC</option>
+                <option value="uub">UUB</option>
+                <option value="ucb">UCB</option>
+                <option value="usfa">USFA</option>
+                <option value="utb">UTB</option>
+                <option value="lasalle">La Salle</option>
+                <option value="loyola">Universidad Loyola</option>
+
+            </select>
+
+        </div>
+
+        <div class="filtro">
+
+            <label for="filtro-area">
+                Área
+            </label>
+
+            <select id="filtro-area">
+
+                <option value="todas">Todas las áreas</option>
+                <option value="ingenieria">Ingeniería y Tecnología</option>
+                <option value="salud">Salud</option>
+                <option value="economia">Economía y Administración</option>
+                <option value="sociales">Ciencias Sociales</option>
+                <option value="educacion">Educación</option>
+                <option value="arte">Arte y Comunicación</option>
+                <option value="naturales">Ciencias Naturales</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="seccion-resultados">
+
+    <div class="encabezado-resultados">
+
+        <div>
+            <span>RESULTADOS</span>
+            <h2>Carreras disponibles</h2>
+        </div>
+
+        <p id="contador-carreras"></p>
+
+    </div>
+
+    <div class="contenedor-carreras" id="contenedor-carreras"></div>
+
+    <div class="sin-resultados" id="sin-resultados">
+
+        <div class="icono-sin-resultados">
+            🔎
+        </div>
+
+        <h3>No encontramos esa carrera</h3>
+
+        <p>
+            Prueba con otro nombre o cambia los filtros de búsqueda.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="seccion-orientacion">
+
+    <div class="contenido-orientacion">
+
+        <span>¿TODAVÍA NO SABES QUÉ ESTUDIAR?</span>
+
+        <h2>Descubre tus intereses profesionales</h2>
+
+        <p>
+            Realiza el test vocacional para conocer áreas profesionales
+            relacionadas con tus intereses, habilidades y preferencias.
+        </p>
+
+        <a href="test.html">
+            Realizar test vocacional
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>Guía Universitaria 🎓</p>
+
+    <p>
+        Información para orientar tu elección profesional.
+    </p>
+
+</footer>
+
+<script src="carreras.js"></script>
+
+</body>
+
+</html>

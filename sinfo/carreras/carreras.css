@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+
+.encabezado {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+
+/* ENCABEZADO DE CARRERAS */
+
+.encabezado-carreras {
+    padding: 80px 8%;
+    background-color: #e8eefc;
+    text-align: center;
+}
+
+.contenido-carreras {
+    max-width: 850px;
+    margin: auto;
+}
+
+.etiqueta {
+    color: #3498db;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.contenido-carreras h1 {
+    font-size: 45px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* BUSCADOR */
+
+.seccion-buscador {
+    padding: 40px 8% 20px;
+    text-align: center;
+}
+
+#buscador-carreras {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#buscador-carreras:focus {
+    border-color: #3498db;
+}
+
+
+/* CARRERAS */
+
+.seccion-carreras {
+    padding: 30px 8% 80px;
+}
+
+.contenedor-carreras {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.carrera-card {
+    width: 100%;
+    min-height: 270px;
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.carrera-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* INFORMACION */
+
+.informacion-carrera {
+    width: 58%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.numero {
+    color: #3498db;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.informacion-carrera h2 {
+    color: #2c3e50;
+    font-size: 27px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.informacion-carrera p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.dato-carrera {
+    margin-bottom: 6px !important;
+}
+
+.dato-carrera strong {
+    color: #2c3e50;
+}
+
+
+/* IMAGEN */
+
+.imagen-carrera {
+    width: 42%;
+    min-height: 270px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.imagen-carrera img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.carrera-card:hover .imagen-carrera img {
+    transform: scale(1.04);
+}
+
+
+/* SIN RESULTADOS */
+
+#sin-resultados {
+    display: none;
+    text-align: center;
+    color: #777;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+
+/* PIE DE PAGINA */
+
+footer {
+    padding: 30px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 6px;
+}
+
+
+/* MENU HAMBURGUESA */
+
+#menu-toggle {
+    display: none;
+}
+
+.boton-menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.boton-menu:hover {
+    transform: scale(1.1);
+}
+
+
+/* TABLET Y CELULAR */
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        position: relative;
+    }
+
+    .boton-menu {
+        display: block;
+        position: relative;
+        z-index: 1101;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        right: 15px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 12px;
+        background: linear-gradient(
+            180deg,
+            #1e3a5f,
+            #28527a
+        );
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-15px) scale(0.97);
+        transform-origin: top right;
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+    }
+
+    .menu a {
+        color: white;
+        padding: 14px 18px;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: left;
+        opacity: 0;
+        transform: translateY(-18px);
+        transition:
+            opacity 0.35s ease,
+            transform 0.35s ease,
+            background 0.25s ease;
+    }
+
+    #menu-toggle:checked ~ .menu a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #menu-toggle:checked ~ .menu a:nth-child(1) {
+        transition-delay: 0.05s;
+    }
+
+    #menu-toggle:checked ~ .menu a:nth-child(2) {
+        transition-delay: 0.12s;
+    }
+
+    #menu-toggle:checked ~ .menu a:nth-child(3) {
+        transition-delay: 0.19s;
+    }
+
+    .menu a:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+
+    /* CARRERAS EN CELULAR */
+
+    .carrera-card {
+        flex-direction: column;
+    }
+
+    .informacion-carrera {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .imagen-carrera {
+        width: 100%;
+        height: 230px;
+        min-height: 230px;
+    }
+
+    .contenido-carreras h1 {
+        font-size: 35px;
+    }
+
+}
+
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width: 500px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .encabezado {
+        padding: 18px 5%;
+    }
+
+    .encabezado-carreras {
+        padding: 60px 5%;
+    }
+
+    .seccion-buscador {
+        padding: 30px 5% 15px;
+    }
+
+    .seccion-carreras {
+        padding: 25px 5% 60px;
+    }
+
+    .informacion-carrera {
+        padding: 22px;
+    }
+
+    .informacion-carrera h2 {
+        font-size: 23px;
+    }
+
+    .informacion-carrera p {
+        font-size: 14px;
+    }
+
+    .imagen-carrera {
+        height: 200px;
+        min-height: 200px;
+    }
+
+}

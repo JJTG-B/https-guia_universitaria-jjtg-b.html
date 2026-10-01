@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+
+    <div class="logo">Guía Universitaria 🎓</div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="boton-menu">☰</label>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="universidades.html">Universidades</a>
+        <a href="carreras.html">Carreras</a>
+        <a class="activo">Test vocacional</a>
+    </nav>
+
+</header>
+
+<section class="portada">
+
+    <span>TEST VOCACIONAL</span>
+
+    <h1>Descubre tu carrera profesional</h1>
+
+    <p>
+        Responde las siguientes preguntas según tus intereses,
+        habilidades y actividades que más disfrutas.
+    </p>
+
+</section>
+
+<main class="contenedor">
+
+    <form id="quizForm">
+
+        <div class="pregunta">
+            <h2>1. ¿Qué actividad disfrutas más?</h2>
+            <label><input type="radio" name="p1" value="ingenieria_sistemas"> Resolver problemas utilizando tecnología.</label>
+            <label><input type="radio" name="p1" value="medicina"> Investigar sobre el cuerpo humano y la salud.</label>
+            <label><input type="radio" name="p1" value="diseno_grafico"> Dibujar, diseñar o crear contenido visual.</label>
+            <label><input type="radio" name="p1" value="administracion"> Organizar actividades o administrar recursos.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>2. ¿Qué tipo de problema te gustaría resolver?</h2>
+            <label><input type="radio" name="p2" value="ingenieria_sistemas"> Problemas relacionados con computadoras y sistemas.</label>
+            <label><input type="radio" name="p2" value="enfermeria"> Problemas relacionados con el cuidado de las personas.</label>
+            <label><input type="radio" name="p2" value="derecho"> Problemas relacionados con la sociedad y las leyes.</label>
+            <label><input type="radio" name="p2" value="ingenieria_ambiental"> Problemas relacionados con la naturaleza y el medio ambiente.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>3. ¿Cuál de estas actividades te parece más interesante?</h2>
+            <label><input type="radio" name="p3" value="diseno_grafico"> Crear logotipos, afiches o diseños digitales.</label>
+            <label><input type="radio" name="p3" value="ingenieria_sistemas"> Crear programas o aplicaciones.</label>
+            <label><input type="radio" name="p3" value="medicina"> Conocer cómo funciona el organismo.</label>
+            <label><input type="radio" name="p3" value="ciencias_educacion"> Enseñar y ayudar a otras personas a aprender.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>4. ¿Qué materia te interesa más?</h2>
+            <label><input type="radio" name="p4" value="ingenieria_sistemas"> Matemática y computación.</label>
+            <label><input type="radio" name="p4" value="medicina"> Biología y ciencias de la salud.</label>
+            <label><input type="radio" name="p4" value="derecho"> Lenguaje, historia y ciencias sociales.</label>
+            <label><input type="radio" name="p4" value="diseno_grafico"> Arte, dibujo y comunicación visual.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>5. ¿Cómo te gustaría expresar tus ideas?</h2>
+            <label><input type="radio" name="p5" value="diseno_grafico"> Mediante imágenes, colores y diseños.</label>
+            <label><input type="radio" name="p5" value="derecho"> Mediante conversaciones y argumentos.</label>
+            <label><input type="radio" name="p5" value="ciencias_educacion"> Explicándolas y enseñándolas a otras personas.</label>
+            <label><input type="radio" name="p5" value="ingenieria_sistemas"> Mediante herramientas digitales y tecnología.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>6. ¿Qué actividad realizarías con mayor interés?</h2>
+            <label><input type="radio" name="p6" value="enfermeria"> Ayudar al cuidado y recuperación de personas.</label>
+            <label><input type="radio" name="p6" value="administracion"> Planificar y administrar un proyecto.</label>
+            <label><input type="radio" name="p6" value="medicina_veterinaria"> Trabajar con animales.</label>
+            <label><input type="radio" name="p6" value="diseno_grafico"> Crear contenido para redes sociales.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>7. ¿Qué herramienta te gustaría aprender a utilizar?</h2>
+            <label><input type="radio" name="p7" value="ingenieria_sistemas"> Programas de programación y desarrollo.</label>
+            <label><input type="radio" name="p7" value="diseno_grafico"> Programas de diseño gráfico y edición.</label>
+            <label><input type="radio" name="p7" value="enfermeria"> Equipos utilizados en el área de salud.</label>
+            <label><input type="radio" name="p7" value="administracion"> Herramientas para administrar negocios.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>8. ¿Qué actividad se relaciona más contigo?</h2>
+            <label><input type="radio" name="p8" value="ciencias_educacion"> Explicar temas y ayudar a mis compañeros.</label>
+            <label><input type="radio" name="p8" value="derecho"> Debatir y defender mis ideas.</label>
+            <label><input type="radio" name="p8" value="ingenieria_electronica"> Investigar cómo funcionan los dispositivos.</label>
+            <label><input type="radio" name="p8" value="ingenieria_ambiental"> Observar y estudiar la naturaleza.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>9. ¿Qué proyecto te gustaría realizar?</h2>
+            <label><input type="radio" name="p9" value="diseno_grafico"> Crear la identidad visual de una empresa.</label>
+            <label><input type="radio" name="p9" value="ingenieria_sistemas"> Desarrollar una aplicación o página web.</label>
+            <label><input type="radio" name="p9" value="medicina"> Realizar una investigación sobre una enfermedad.</label>
+            <label><input type="radio" name="p9" value="administracion"> Crear y administrar un emprendimiento.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>10. ¿Qué habilidad consideras más importante?</h2>
+            <label><input type="radio" name="p10" value="ingenieria_sistemas"> Pensamiento lógico.</label>
+            <label><input type="radio" name="p10" value="diseno_grafico"> Creatividad.</label>
+            <label><input type="radio" name="p10" value="derecho"> Capacidad para comunicar y argumentar.</label>
+            <label><input type="radio" name="p10" value="enfermeria"> Capacidad para cuidar y ayudar a otros.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>11. ¿Qué tipo de trabajo preferirías?</h2>
+            <label><input type="radio" name="p11" value="ingenieria_sistemas"> Desarrollar soluciones tecnológicas.</label>
+            <label><input type="radio" name="p11" value="diseno_grafico"> Crear diseños y contenido visual.</label>
+            <label><input type="radio" name="p11" value="psicologia"> Atender y orientar a personas.</label>
+            <label><input type="radio" name="p11" value="ingenieria_ambiental"> Trabajar relacionado con el medio ambiente.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>12. ¿Qué te gustaría crear?</h2>
+            <label><input type="radio" name="p12" value="diseno_grafico"> Afiches, logotipos e ilustraciones.</label>
+            <label><input type="radio" name="p12" value="ingenieria_sistemas"> Sistemas, aplicaciones o herramientas digitales.</label>
+            <label><input type="radio" name="p12" value="ciencias_educacion"> Materiales educativos.</label>
+            <label><input type="radio" name="p12" value="administracion"> Un negocio o proyecto empresarial.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>13. ¿Qué situación te resulta más interesante?</h2>
+            <label><input type="radio" name="p13" value="medicina"> Comprender y solucionar problemas de salud.</label>
+            <label><input type="radio" name="p13" value="ingenieria_sistemas"> Encontrar soluciones mediante la tecnología.</label>
+            <label><input type="radio" name="p13" value="diseno_grafico"> Mejorar la forma en que se presenta una información.</label>
+            <label><input type="radio" name="p13" value="psicologia"> Comprender los problemas de las personas.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>14. ¿Qué actividad realizarías durante tu tiempo libre?</h2>
+            <label><input type="radio" name="p14" value="diseno_grafico"> Dibujar, editar imágenes o crear contenido.</label>
+            <label><input type="radio" name="p14" value="ingenieria_sistemas"> Aprender sobre computadoras o tecnología.</label>
+            <label><input type="radio" name="p14" value="medicina_veterinaria"> Realizar actividades relacionadas con animales.</label>
+            <label><input type="radio" name="p14" value="ciencias_educacion"> Leer, investigar o ayudar a otras personas.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>15. ¿En qué actividad te gustaría destacar profesionalmente?</h2>
+            <label><input type="radio" name="p15" value="diseno_grafico"> Crear diseños que comuniquen ideas visualmente.</label>
+            <label><input type="radio" name="p15" value="ingenieria_sistemas"> Desarrollar soluciones utilizando tecnología.</label>
+            <label><input type="radio" name="p15" value="medicina"> Contribuir al bienestar y cuidado de las personas.</label>
+            <label><input type="radio" name="p15" value="administracion"> Administrar proyectos y desarrollar negocios.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>16. ¿Qué proyecto te gustaría desarrollar?</h2>
+            <label><input type="radio" name="p16" value="ingenieria_sistemas"> Crear una aplicación para solucionar una necesidad.</label>
+            <label><input type="radio" name="p16" value="diseno_grafico"> Diseñar una página web atractiva y creativa.</label>
+            <label><input type="radio" name="p16" value="medicina"> Investigar una solución para mejorar la salud.</label>
+            <label><input type="radio" name="p16" value="administracion"> Crear un plan para un nuevo negocio.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>17. ¿Qué aspecto de una página web te llama más la atención?</h2>
+            <label><input type="radio" name="p17" value="ingenieria_sistemas"> Que funcione correctamente y sea rápida.</label>
+            <label><input type="radio" name="p17" value="diseno_grafico"> Sus colores, imágenes, tipografías y diseño.</label>
+            <label><input type="radio" name="p17" value="comunicacion_social"> La información y la forma de comunicarla.</label>
+            <label><input type="radio" name="p17" value="administracion"> La manera en que ayuda a un negocio.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>18. ¿Qué actividad te gustaría realizar en un proyecto escolar?</h2>
+            <label><input type="radio" name="p18" value="diseno_grafico"> Crear el diseño y presentación del proyecto.</label>
+            <label><input type="radio" name="p18" value="ingenieria_sistemas"> Programar la parte tecnológica.</label>
+            <label><input type="radio" name="p18" value="ciencias_educacion"> Explicar el proyecto al resto de la clase.</label>
+            <label><input type="radio" name="p18" value="ingenieria_ambiental"> Investigar su relación con la naturaleza.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>19. ¿Qué tipo de contenido te gustaría crear?</h2>
+            <label><input type="radio" name="p19" value="diseno_grafico"> Ilustraciones, afiches, logotipos y contenido visual.</label>
+            <label><input type="radio" name="p19" value="comunicacion_social"> Videos o contenidos para informar a las personas.</label>
+            <label><input type="radio" name="p19" value="ingenieria_sistemas"> Aplicaciones y herramientas digitales.</label>
+            <label><input type="radio" name="p19" value="ciencias_educacion"> Contenido para enseñar.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>20. ¿Qué característica te representa mejor?</h2>
+            <label><input type="radio" name="p20" value="diseno_grafico"> Soy creativo y me gusta expresar ideas visualmente.</label>
+            <label><input type="radio" name="p20" value="ingenieria_sistemas"> Soy lógico y disfruto encontrar soluciones.</label>
+            <label><input type="radio" name="p20" value="enfermeria"> Soy responsable y me interesa ayudar a las personas.</label>
+            <label><input type="radio" name="p20" value="administracion"> Soy organizado y me interesa administrar proyectos.</label>
+        </div>
+
+        <button type="submit" class="boton-resultado">
+            Ver mi carrera recomendada
+        </button>
+
+    </form>
+
+    <section id="resultado" class="resultado">
+
+        <span class="etiqueta">RESULTADO</span>
+
+        <h2>Tu carrera recomendada es:</h2>
+
+        <h3 id="tituloCarrera"></h3>
+
+        <p id="descripcionCarrera"></p>
+
+        <div class="carrera-destacada">
+            <h4>¿Por qué aparece como resultado?</h4>
+            <p id="motivoCarrera"></p>
+        </div>
+
+        <h4 class="titulo-relacionadas">
+            Otras carreras relacionadas
+        </h4>
+
+        <div id="carrerasRelacionadas"></div>
+
+<h4 class="titulo-universidades">
+    Universidades donde puedes estudiar esta carrera
+</h4>
+
+<div id="universidadesResultado" class="universidades-resultado"></div>
+
+<button id="botonRepetir" class="boton-repetir">
+    Realizar el test nuevamente
+</button>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Guía Universitaria 🎓</p>
+    <p>Orientación para estudiantes de nivel secundario</p>
+</footer>
+
+<script src="test.js"></script>
+
+</body>
+</html>
